@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    < input type="text" id="firstNumber" name="number">
+    < input type="text" id="secondNumber" name="number"><br>
+    <button onclick="cong('+')">Add(+)</button>
+    <button onclick="tru('-')">Sub(-)</button>
+    <button onclick="nhan('x')">Muti(X)</button>
+    <button onclick="chia('/')">Divi(/)</button>
+
+</form>
+<script>
+    function cong(type) {
+        let a = parseInt(document.getElementById("firstNumber").value);
+        let b = parseInt(document.getElementById("secondNumber").value);
+        if (type == '+') {
+            let c = a + b;
+            alert(c);
+        }
+    }
+    function tru(type) {
+        let a = parseInt(document.getElementById("firstNumber").value);
+        let b = parseInt(document.getElementById("secondNumber").value);
+        if (type == '-') {
+            let d = a - b;
+            alert(d);
+        }
+    }
+    function nhan(type) {
+        let a = parseInt(document.getElementById("firstNumber").value);
+        let b = parseInt(document.getElementById("secondNumber").value);
+        if (type == 'x') {
+            let x = a * b;
+            alert(x);
+        }
+    }
+    function chia(type) {
+        let a = parseInt(document.getElementById("firstNumber").value);
+        let b = parseInt(document.getElementById("secondNumber").value);
+        if (type == '/') {
+            let y = a / b;
+            alert(y);
+        }
+    }
+
+</script>
+</body>
+</html>
